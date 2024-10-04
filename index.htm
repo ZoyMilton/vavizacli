@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>VavizacliTV - En Directo</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />		
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="72x72" href="./img/favicon.png" />	
+
+<style>
+body { font-family :   Geneva, Arial, Helvetica, sans-serif; color:#dddddd; link:#d13bff; vlink:#d13bff }
+ a:link    {color:d13bff;}
+ a:visited {color:d13bff;}
+ a:hover   {color:7DC2FF;}
+ a:active  {color:d13bff;}
+ html { 
+  background: url(./img/fondito.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://ssh101.com/fplayer/7.2.5/skin/skin.css">
+
+<style type="text/css">
+html,body { font: 12px "Myriad Pro", "Lucida Grande", sans-serif; text-align: center; padding: 0%;  margin: 0; }
+</style>
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://ssh101.com/fplayer/7.2.7/flowplayer.min.js"></script>
+<script src="https://ssh101.com/fplayer/7.2.7/flowplayer.set.js"></script>
+<script src="https://ssh101.com/fplayer/7.2.7/hls.light.min.js"></script>
+
+<style>
+.flowplayer {
+  background: #000000;
+  background-color: #000000  !important;
+  margin-bottom: 0px;
+  padding-top 41.67%;
+   width:852px;
+  height:480px;
+  background-image: url(./img/fondito.jpg) ;
+  background-size: 100% 100%; 
+}
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .flowplayer {
+    background-image: url(./img/fondito.jpg);
+  }
+}
+
+.flowplayer.is-error .fp-message {
+  background-image: url(./img/fondo.png);
+  background-size: contain;
+  width:852px;
+  height:480px;
+  background-repeat: no-repeat;
+}
+.flowplayer.is-error .fp-message h2,
+.flowplayer.is-error .fp-message p {
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px #fff
+}
+.flowplayer.is-error .fp-message h2 {
+  font-size: 200%;
+}
+.flowplayer.is-error .fp-message p {
+  font-size: 150%;
+}
+.flowplayer.is-mouseout .fp-ui {
+  cursor: none !important;
+}
+
+.player-frame-wrapper {
+  position: relative;
+  width: 100%;
+ 
+  /* room for slim timeline */
+  padding-bottom: 3px;
+}
+.player-frame-wrapper-ratio {
+  /* same as player ratio */
+  padding-top: 41.67%;
+}
+ 
+.player-frame {
+  /* make iframe fill wrapper */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.flowplayer .fp-logo {
+  /* logo always visible, even on origin domain */
+  display: block;
+  opacity: 0.3 !important;
+ 
+  left: auto; /* avoid logo being stuck on left side */
+ left:1.5%;
+  top: 5px;
+fullscreenOnly: true;
+}
+
+</style>
+<script>
+flowplayer.conf = {
+ fullscreen: true,
+ share: false,
+ // iOS allows only native fullscreen from within iframes
+  native_fullscreen: true
+};
+</script>
+</head>
+<body >
+<div align="center"> 
+ 
+<br>
+<div style="width:835px;font-size:15px;background:#1F1405;padding:9px; text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6); color:#ffffff;font-size:16px;font-weight:bold;font-weight:bold; padding:6px; border: 2px solid #222222;-moz-border-radius: 5px;  -webkit-border-radius: 5px;     border-radius: 5px;border-style:double;opacity: 70%;">
+<h3 style="color:#ffffff;font-size:21px;" ><font style="font-weight:normal">En Directo:</font>&nbsp;  '<strong style="color:#ffffff !important">Vavizacli TV</strong>'   &nbsp;&nbsp;-&nbsp; &nbsp;    <font size="3"  style="font-weight:normal"  style="color:#dddddd">Más canales en:  <a href="https://tv.zoymilton.com"  style="color:#dddddd" >zoy.tv</a></font></h3>
+</div><br>
+ 
+<div align="left" style="width:852px;height:480px">
+<div class='videocontent'><div id='fp' class='flowplayer fp-outlined fp-mute'></div>
+
+
+<script>
+flowplayer("#fp", {
+    key: '$484500622742150',
+    poster: 'fondo.png',
+	 native_fullscreen: true,
+	  logo: './img/logo.png',
+    ratio: 0.5625,
+    live: true,
+    dvr: true,
+    autoplay: true,
+    embed: false,
+    title: 'Live - zoytv',
+    clip: {
+        sources: [{ type: "application/x-mpegurl", src: "https://glb.bozztv.com/glb/ssh101/zoytv/index.m3u8"}],
+        autoplay: true,
+        }
+  });
+</script>
+
+
+
+<div align="right" style="margin-top:5px;color:#999999">   </div>
+<div style="margin-top:-5px;">
+
+
+<div style="font-size:13px;color:#999999;padding-top:5px;">Disfruta de muchos canales de Bolivia</div>
+
+</div>
+</div>
+
+<br> 
+
+
+<div style="width:835px;font-size:15px;background:#1F1405;padding:9px; text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6); color:#ffffff;font-size:16px; padding:6px; border: 2px solid #222222;-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;border-style:single;opacity: 60%;text-align:center">
+	¿Quieres tener tu propio canal y con una señal 24/7?:
+ &nbsp; <a href="https://wa.me/+59160733371" target="_blank">whatsapp</a> 
+</div>
+  
+
+
+ <br><br>
+<div align="center"> <font size="2" style="color:#333333">&copy; 
+ <script language="JavaScript">
+ var d=new Date();
+ yr=d.getFullYear();
+ document.write(yr);
+ </script>  zoy.tv Todos los Derechos Reservados</font> </div>
+ </div>
+ </body>
+</html>
